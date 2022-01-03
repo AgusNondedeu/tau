@@ -7,7 +7,6 @@ import com.bolivarsoft.components.MenuFileSystem;
 
 @SpringBootApplication
 public class TauApplication {
-
 	public static void main(String[] args) {
 		MenuFileSystem.crearMenu().mostrarMenu();
 	}
