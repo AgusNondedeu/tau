@@ -1,0 +1,22 @@
+{
+	"titulo": "Bienvenido - Ingrese una opcion",
+	"opciones": [{
+		"nroOpcion": 1,
+		"descripcion": "Mostrar la hora",
+		"continuar": true,
+		"claseInstanciar": "edu.it.ServicioHora"
+	}, {
+		"nroOpcion": 2,
+		"descripcion": "Saludar a los amigos",
+		"continuar": true,
+		"claseInstanciar": "edu.it.JuegoPPT"
+	}, {
+		"nroOpcion": 3,
+		"descripcion": "Salir",
+		"continuar": false,
+		"claseInstanciar": "N/A"
+	}],
+	"configuracion": {
+		"totalIntentos": 4
+	}
+}

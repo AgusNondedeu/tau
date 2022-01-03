@@ -1,0 +1,48 @@
+alba748berro
+
+Bajar ubuntu server 20.04 LTS
+Poner como unidad optica el archivo bajado
+botear con esa unidad optica
+OpenSSH Habilitado
+dentro las herramientas Docker
+luego de reiniciar
+loguearse
+ip a
+a mi me toca 
+192.168.0.37
+
+
+tau (nombre del grupo)
+
+
+Ejemplos de Inversion of dependency
+
+Todo lo que es J2EE es un ejemplo de esto.
+
+JDBC
+
+  M ->    I <-    N
+Mi App -> I <- DriverJDBC
+Mi app -> JDBC (Interfaces) <- DriverJDBC
+
+Mi aplicacion conoce la interfaz JDBC que es un grupo 
+de clases y sobre todo java interfaces.
+Por otro lado, el driver JDBC implementa esas interfaces
+para ser "Compliance" con JDBC.
+
+Son tres patas. La App, la interfaz (o la spec), y 
+la implementacion.
+
+La idea es que esas tres patas, nosotros las podamos
+implementar en el ejemplo de menu.
+
+
+menu-spec
+menu-implementacion
+clase1/tau que es el usuario del menu
+
+
+
+
+
+
