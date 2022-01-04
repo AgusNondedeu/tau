@@ -33,5 +33,6 @@ git commit -m "comentario a los features nuevos"
 
 git push origin featureComandos
 ----------------------------------------------------------------------
-
+Recordar que git checkout (sin el -b es para cambiar de rama)
+con el -b es para crear una rama
 
