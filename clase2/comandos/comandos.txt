@@ -1,0 +1,35 @@
+Para crear las claves publica y privada
+
+ssh-keygen si no le pongo nada ?
+va a crearlas en /user/{miusurio}/id_rsa y id_rsa.pub
+
+de lo contrario, si le pongo un nombre va a crearlas
+con ese nombre (en la carpeta actual)
+
+luego ssh -i {path_clave_privada} root@IP
+
+si estoy en linux y quiero hacer lo mismo, la clave
+privada tiene que tener permisos r-------
+para eso ponemos chmod 400 {clave_privada}
+
+luego, todos los comandos de git lo mismo.
+
+nano y vim son los dos editores de texto disponibles
+tanto en cmder como en linux
+
+vim recomendable es ir avanzando de a poco
+nano mas facil
+
+la otra herramienta para traer y llevar es:
+
+----------------------------------------------------------------------
+Para crear una rama en git
+
+featureComandos voy a hacer un git checkout -b featureComandos
+
+voy a trabajar como siempre y luego voy a hacer
+
+git commit -m "comentario a los features nuevos"
+
+git push origin featureComandos
+
