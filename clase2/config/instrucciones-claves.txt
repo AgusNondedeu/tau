@@ -1,0 +1,3 @@
+1) ssh-keygen (me va a proponer /user/{miNombre}/.ssh/id_rsa{public/private})
+2) Luego ir a git y poner la clave publica la que termina con .pub
+3) cuando clonamos colocar ssh en vez de https
