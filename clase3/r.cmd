@@ -1,0 +1,1 @@
+java -jar target\tau-ALL.jar
