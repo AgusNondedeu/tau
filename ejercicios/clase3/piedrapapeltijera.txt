@@ -1,0 +1,23 @@
+function PiedraPapelTijera(Func<int> input){
+    // piedra = 0, papel = 1, tijera = 2
+    int random = Random(0,2)
+    int getInput = (int)input();
+
+    if(getInput == random)
+        return "Empate"
+    else if(getInput < random)
+        return "Gana cpu con {(Opciones)random)}"
+    else
+        return "Gana usuario con {(Opciones)getInput}"
+}
+
+enum Opciones{
+    0: "Piedra",
+    1: "Papel",
+    2: "Tijera"
+}
+
+function Jugar(){
+    PiedraPapelTijera(() => Console.Read())
+}
+

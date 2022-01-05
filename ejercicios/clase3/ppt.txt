@@ -1,0 +1,19 @@
+
+public int jugar(int opcionJugador1, int opcionJugador2){
+	if(opcionJugador1 == opcionJugador2) {
+		return 0;
+	}
+	else if ((opcionJugador1 == 0 && opcionJugador2 == 1){
+		return 2;
+	}else if ((opcionJugador1 == 0 && opcionJugador2 == 2){
+		return 1;
+	}else if ((opcionJugador1 == 1 && opcionJugador2 == 2){
+		return 2;
+	}else if ((opcionJugador1 == 1 && opcionJugador2 == 0){
+		return 1;
+	}else if ((opcionJugador1 == 2 && opcionJugador2 == 0){
+		return 2;
+	}}else if ((opcionJugador1 == 2 && opcionJugador2 == 1){
+		return 1;	
+}
+
