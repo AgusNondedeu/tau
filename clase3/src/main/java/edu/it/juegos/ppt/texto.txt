@@ -1,0 +1,77 @@
+----------------------------------------------------------------------
+Piedra Papel o Tijera
+----------------------------------------------------------------------
+
+Escenario donde nos piden realizar un juego de Piedra Papel o Tijera
+
+TDD Test Driven Devopment
+
+Funciones puras, logica dura y pura.
+
+Funcion pura: 
+
+es aquella que dado un input siempre responde con el mismo output
+
+Ejemplos Las matematicas 
+
+suma(3,2) -> 5
+resta(6,2) -> 4
+
+Cuantas conbinaciones de suma(z, z) -> 5 se puede obtener un cinco.
+Virtualmente infinitas
+
+Eso lo hace menos pura ? no.
+
+Funcion sobreyectiva que es un tipo de funcion pura.
+
+----------------------------------------------------------------------
+Si analizamos funciones puras
+----------------------------------------------------------------------
+
+Piedra papel o tijera
+
+enum ElementoJuego {
+   Piedra, 
+   Papel, 
+   Tijera
+}
+
+return 0 es empate
+return 1 es jugador1
+return 2 es jugador2
+
+jugar(Piedra, Papel) -> Jugador2
+jugar(Piedra, Papel) -> Jugador2
+jugar(Piedra, Papel) -> Jugador2
+jugar(Piedra, Papel) -> Jugador2
+
+jugar(Piedra, Piedra) -> Empate
+
+jugar(Tijera, Papel) -> Jugador1
+
+----------------------------------------------------------------------
+
+tirar() -> Un numero, un color, una docena, paridad, columna
+
+class Randomizador {
+   Integer generarRandom() {
+      return 14;
+   }
+}
+
+class JuegoRuleta {
+   private Randomizador randomizador;
+
+   public JuegoRuleta(Randomizador randomizador) {
+       this.randomizador = randomizador;
+   }
+
+   public MetadataJugada tirar() {
+      randomizador.generarRandom();
+   }
+}
+
+
+
+
+
