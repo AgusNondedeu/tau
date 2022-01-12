@@ -1,0 +1,34 @@
+docker run -it --entrypoint java openjdk:11 --version
+
+Crea un container, entrypoint le dice a docker que comando
+debe ejecutar. -it le dice a docker que sea interactivo
+para con la consola.
+Recordar que los argumentos van al final de todo.
+
+--------------------------------------------------------
+
+Para ejecutar un proceso (un .jar) en docker lo que se
+puede hacer es montar en una carpeta del el container
+otra carpeta de la maquina host
+
+esta opcion es -v --volume
+
+docker run -it -v /root/upload:/clase4 --entrypoint ls openjdk:11 /clase4 -all
+
+docker run -it -v /root/upload:/clase4 --entrypoint java  openjdk:11 -jar  /clase4/tau-ALL.jar
+
+Para subir archivos se usa scp, hay opciones como winscp que es entorno grafico, bitvise
+
+scp -r -i \var\keys\frankfurt elarchivoquequierosubir root@IP_DEL_SERVIDOR:/root/upload/nombredelarchivoenelservidor
+
+--------------------------------------------------------
+Como levantar mysql
+
+docker run -d -e MYSQL_ROOT_PASSWORD=sarasa -p 3306:3306 mysql
+
+apagar el firewall 
+
+systemctl stop ufw.service
+
+
+
