@@ -30,5 +30,9 @@ apagar el firewall
 
 systemctl stop ufw.service
 
+--------------------------------------------------------
+
+docker run -d -v /root/upload:/clase4 --entrypoint java -p 80:8080 openjdk:11 -jar  /clase4/cursoSpring-ALL.jar
+
 
 
