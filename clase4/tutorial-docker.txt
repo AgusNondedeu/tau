@@ -34,5 +34,24 @@ systemctl stop ufw.service
 
 docker run -d -v /root/upload:/clase4 --entrypoint java -p 80:8080 openjdk:11 -jar  /clase4/cursoSpring-ALL.jar
 
+--------------------------------------------------------
+
+Tengo 3 instancias o 3 containers y necesito un software (haproxy) o hardware
+
+--------------------------------------------------------
+
+Para instalar y configurar el haproxy
+
+apt update
+apt install haproxy
+
+para chequear la configuracion correcta
+haproxy -c -f /etc/haproxy/haproxy.cfg
+
+Luego de configurar el servicio debo reiniciarlo 
+
+systemctl restart haproxy.service
+
+--------------------------------------------------------
 
 

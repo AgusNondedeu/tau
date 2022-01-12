@@ -1,5 +1,6 @@
 package edu.it.controllers;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Optional;
 
@@ -31,6 +32,15 @@ public class AlumnoController {
 	
 	@Autowired
 	AlumnoRepository alumnoRepository;
+	
+	@RequestMapping(path="/instancia", method=RequestMethod.GET)
+	public Object obtenerInstancia() {
+		HashMap<String, String> mapa = new HashMap<String, String>();
+		
+		mapa.put("nombreInstancia", System.getenv("instancia"));
+		
+		return mapa;
+	}
 	
 	@RequestMapping(path="/inventar", method=RequestMethod.GET)
 	public Alumno inventarAlumno() {
