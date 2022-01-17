@@ -1,0 +1,17 @@
+Lo ideal al momento de pasar a produccion un release es:
+
+armar la imagen de docker y subirla a una registry de docker
+
+para esto tenemos que utilizar un Dockerfile (adjunto)
+
+docker build -t minombre:1 . (el punto representa la carpeta donde 
+esta el Dockerfile)
+
+Luego una vez creada la imagen
+
+docker run -d -p puertoFuera:8080 --name unNombre minombre:1
+
+y de requerir variables de entorno es -e KEY=VALUE -e KEY=VALUE
+
+el --name permite luego hacer docker logs unNombre
+permite hacer docker rm unNombre
