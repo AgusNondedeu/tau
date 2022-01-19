@@ -1,0 +1,7 @@
+Teoria proxy reverso / api gateway
+
+En virtud de una url o verbo http va a rutear el mensaje
+hacia lo que se denomina un upstream.
+
+Que es otro servidor y otro puerto.
+
